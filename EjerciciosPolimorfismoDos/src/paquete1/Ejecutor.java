@@ -45,12 +45,16 @@ public class Ejecutor {
         listaArriendos.add(arriendoSesiones);
         
         for (int i = 0; i < listaArriendos.size(); i++) {
+        /*
+        Aquí se recorren todos los elementos guardados en listaArriendo. Se 
+        seleccionan aquellos que son tipos específicos de Arriendo. Luego, se 
+        llama a un método abstracto que cada tipo de Arriendo implementa de 
+        manera diferente según su uso particular.
+        */
             listaArriendos.get(i).establecerArriendoMensual(); // se llama al 
                                                             // métodos abstracto
             System.out.println(listaArriendos.get(i));
             System.out.println();
-        }
-        
-        
+        }  
     }
 }
